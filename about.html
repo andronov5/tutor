@@ -1,41 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Meet Lis Cohen of Montview Tutor.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Montview Tutor | About</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="index.html" aria-label="Montview Tutor home"><span class="brand-mark">M</span><span>Montview Tutor</span></a>
-      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Open navigation">
-      <label class="nav-button" for="nav-toggle"><span></span></label>
-      <nav class="nav-menu" aria-label="Main navigation">
-        <a href="index.html">Home</a><a href="tutoring.html">Tutoring</a><a href="schedule.html">Book</a><a href="faq.html">FAQs</a><a href="about.html" aria-current="page">About</a>
+    <div class="container navbar">
+      <a class="brand" href="index.html">Montview Tutor</a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="tutoring.html">Tutoring</a>
+        <a class="book-link" href="schedule.html">Book</a>
+        <a href="faq.html">FAQs</a>
+        <a class="active" href="about.html">About</a>
       </nav>
     </div>
   </header>
 
-  <main id="main" class="page-main">
-    <section class="page-title"><div class="container"><h1>About Lis</h1></div></section>
+  <main class="page">
+    <div class="container">
+      <header class="page-head">
+        <h1>About</h1>
+      </header>
 
-    <section class="section first-section">
-      <div class="container about-layout">
-        <div class="about-copy">
-          <p class="lead-copy">Lis Cohen brings a calm, clear teaching style to students who need help making school feel more manageable.</p>
-          <p>She has taught and trained students, scientists, engineers, policy makers, and community audiences. Her background includes science education, meteorology, climate and environmental policy, and Hebrew tutoring for Bat / Bar Mitzvah students.</p>
-          <p>Lis holds master’s degrees in public affairs from Princeton University and meteorology from the University of Utah. She earned her bachelor’s degree at Cornell University, where she studied Atmospheric Science and the Science of Earth Systems.</p>
-          <div class="button-row"><a class="button primary" href="schedule.html#consult">Book free consult</a><a class="button ghost" href="tutoring.html">See tutoring</a></div>
+      <section class="split">
+        <div>
+          <p class="lead">
+            Lis Cohen is an experienced educator who helps students feel calmer, clearer, and more confident.
+          </p>
+
+          <p>
+            She has taught and trained students, scientists, engineers, policy makers, and public audiences. She works part-time with the COMET program at the University Corporation for Atmospheric Research.
+          </p>
+
+          <p>
+            Lis has a master’s degree in meteorology from the University of Utah and a master’s degree in public affairs from Princeton University. She earned her bachelor’s degree at Cornell University, where she studied Atmospheric Science and the Science of Earth Systems.
+          </p>
+
+          <p>
+            She has also worked as a science educator, presenter, and exhibit planner at the Museum of Science in Boston, the Franklin Institute Science Museum, the Blue Hill Weather Observatory, and Yellowstone National Park.
+          </p>
+
+          <div class="btn-row">
+            <a class="btn" href="schedule.html">Book free consult</a>
+          </div>
         </div>
-        <aside class="profile-card"><img src="lis3.jpg" alt="Lis Cohen smiling in a professional portrait"><div><h2>Lis Cohen</h2><p>Educator, tutor, science communicator.</p></div></aside>
-      </div>
-    </section>
+
+        <figure class="about-photo">
+          <img src="lis3.jpg" alt="Portrait of Lis Cohen" />
+        </figure>
+      </section>
+    </div>
   </main>
 
-  <footer class="site-footer"><div class="container footer-wrap"><p>Montview Tutor</p><nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="tutoring.html">Tutoring</a><a href="schedule.html">Book</a><a href="faq.html">FAQs</a></nav></div></footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Montview Tutor</span>
+      <a href="schedule.html">Book a free consult</a>
+    </div>
+  </footer>
 </body>
 </html>

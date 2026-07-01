@@ -1,54 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Book a free consult or tutoring session with Montview Tutor.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Montview Tutor | Book</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="index.html" aria-label="Montview Tutor home"><span class="brand-mark">M</span><span>Montview Tutor</span></a>
-      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Open navigation">
-      <label class="nav-button" for="nav-toggle"><span></span></label>
-      <nav class="nav-menu" aria-label="Main navigation">
-        <a href="index.html">Home</a><a href="tutoring.html">Tutoring</a><a href="schedule.html" aria-current="page">Book</a><a href="faq.html">FAQs</a><a href="about.html">About</a>
+    <div class="container navbar">
+      <a class="brand" href="index.html">Montview Tutor</a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="tutoring.html">Tutoring</a>
+        <a class="book-link active" href="schedule.html">Book</a>
+        <a href="faq.html">FAQs</a>
+        <a href="about.html">About</a>
       </nav>
     </div>
   </header>
 
-  <main id="main" class="page-main">
-    <section class="page-title"><div class="container"><h1>Book</h1></div></section>
+  <main class="page">
+    <div class="container">
+      <header class="page-head">
+        <h1>Book</h1>
+      </header>
 
-    <section class="section first-section">
-      <div class="container booking-layout">
-        <article class="booking-card highlight" id="consult">
-          <div class="step-label">Step 1</div>
+      <section class="booking-panel">
+        <div class="booking-block">
           <h2>New families</h2>
-          <p>Start with a complimentary 30-minute virtual meeting. Lis will learn what support is needed and confirm whether tutoring is a good fit.</p>
-          <!-- Replace this URL with the real complimentary meeting link. -->
-          <a class="button primary" href="https://calendly.com/YOUR-CALENDLY/complimentary-meeting" target="_blank" rel="noopener">Book free consult</a>
-        </article>
+          <p>
+            Start with a free 30-minute virtual consult. This helps Lis learn what support you need before paid tutoring begins.
+          </p>
 
-        <article class="booking-card" id="sessions">
-          <div class="step-label">Step 2</div>
+          <a
+            class="btn"
+            href="https://calendly.com/YOUR-CALENDLY/complimentary-meeting"
+            target="_blank"
+            rel="noopener"
+          >
+            Book free consult
+          </a>
+        </div>
+
+        <div class="booking-block">
           <h2>Current families</h2>
-          <p>Paid sessions are for families who have already completed the complimentary meeting.</p>
-          <input class="confirm-input" type="checkbox" id="consult-confirm">
-          <label class="confirm-box" for="consult-confirm"><span class="fake-check" aria-hidden="true"></span><span>Yes, we already had the free consult.</span></label>
-          <div class="session-options" aria-label="Paid tutoring options">
-            <div class="session-card"><h3>Virtual tutoring</h3><p>55 minutes · $90</p><!-- Replace this URL with the real virtual tutoring link. --><a class="button small-button" href="https://calendly.com/YOUR-CALENDLY/virtual-tutoring" target="_blank" rel="noopener">Book virtual</a></div>
-            <div class="session-card"><h3>In-person tutoring</h3><p>55 minutes · $100</p><!-- Replace this URL with the real in-person tutoring link. --><a class="button small-button" href="https://calendly.com/YOUR-CALENDLY/in-person-tutoring" target="_blank" rel="noopener">Book in person</a></div>
+          <p>
+            Paid tutoring is for families who have already completed the free consult.
+          </p>
+
+          <label class="confirm-box" for="consultConfirm">
+            <input type="checkbox" id="consultConfirm" />
+            <span>Yes, we already had the free 30-minute consult.</span>
+          </label>
+
+          <div id="paidOptions" class="booking-options" hidden>
+            <article class="booking-option">
+              <h3>Virtual tutoring</h3>
+              <p>55-minute online session.</p>
+              <a
+                class="btn"
+                href="https://calendly.com/YOUR-CALENDLY/virtual-tutoring"
+                target="_blank"
+                rel="noopener"
+              >
+                Book virtual
+              </a>
+            </article>
+
+            <article class="booking-option">
+              <h3>In-person tutoring</h3>
+              <p>55-minute session with Lis.</p>
+              <a
+                class="btn dark"
+                href="https://calendly.com/YOUR-CALENDLY/in-person-tutoring"
+                target="_blank"
+                rel="noopener"
+              >
+                Book in person
+              </a>
+            </article>
           </div>
-          <p class="fine-print">Haven’t met with Lis yet? Please book the free consult first.</p>
-        </article>
-      </div>
-    </section>
+        </div>
+      </section>
+    </div>
   </main>
 
-  <footer class="site-footer"><div class="container footer-wrap"><p>Montview Tutor</p><nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="tutoring.html">Tutoring</a><a href="faq.html">FAQs</a><a href="about.html">About</a></nav></div></footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Montview Tutor</span>
+      <a href="faq.html">Read FAQs</a>
+    </div>
+  </footer>
+
+  <script>
+    const consultConfirm = document.getElementById("consultConfirm");
+    const paidOptions = document.getElementById("paidOptions");
+
+    consultConfirm.addEventListener("change", function () {
+      paidOptions.hidden = !consultConfirm.checked;
+    });
+  </script>
 </body>
 </html>

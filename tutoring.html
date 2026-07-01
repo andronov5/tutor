@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Montview Tutor | Tutoring</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <title>Tutoring | Montview Tutor</title>
+  <meta name="description" content="Tutoring subjects, session format, and pricing for Montview Tutor." />
+
+  <link rel="stylesheet" href="styles.css?v=10" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container navbar">
+    <div class="container header-bar">
       <a class="brand" href="index.html">Montview Tutor</a>
 
-      <nav class="nav-links" aria-label="Main navigation">
+      <nav class="nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a class="active" href="tutoring.html">Tutoring</a>
-        <a class="book-link" href="schedule.html">Book</a>
+        <a class="active" href="tutoring.html" aria-current="page">Tutoring</a>
+        <a class="nav-button" href="schedule.html">Book</a>
         <a href="faq.html">FAQs</a>
         <a href="about.html">About</a>
       </nav>
@@ -23,17 +26,17 @@
 
   <main class="page">
     <div class="container">
-      <header class="page-head">
-        <h1>Tutoring</h1>
-      </header>
+      <h1 class="page-title">Tutoring</h1>
 
       <section class="split">
-        <div>
-          <p class="lead">
-            Lis helps students understand the material, build confidence, and create better habits around schoolwork.
+        <div class="card">
+          <h2>Clear support</h2>
+
+          <p>
+            Lis helps students understand the material, organize their work, and build confidence one step at a time.
           </p>
 
-          <div class="price-row">
+          <div class="price-grid">
             <div class="price">
               <strong>$90</strong>
               <span>Virtual session</span>
@@ -45,50 +48,51 @@
             </div>
           </div>
 
-          <p style="margin-top: 16px;">
-            Sessions are 55 minutes. A few low-cost or no-cost spots may be available for families who need support.
+          <p>
+            Sessions are 55 minutes. Low-cost or no-cost spots may be available for families who need support.
           </p>
 
-          <div class="btn-row">
-            <a class="btn" href="schedule.html">Book free consult</a>
+          <div class="button-row">
+            <a class="button" href="schedule.html">Book free consult</a>
           </div>
         </div>
 
         <figure class="photo-card">
-          <img src="tutor.jpg" alt="A student working through math on a whiteboard" />
+          <img src="tutor.jpg" alt="Student working through math on a whiteboard" />
         </figure>
       </section>
 
-      <section class="section">
-        <div class="grid two">
-          <article class="card">
-            <h2>Subjects</h2>
-            <ul class="subject-list">
-              <li>Math, from middle school through college intro courses</li>
-              <li>Physics and AP Earth Science</li>
-              <li>Study skills and organization</li>
-              <li>Hebrew for bar and bat mitzvah preparation</li>
-            </ul>
-          </article>
+      <section class="grid two" style="margin-top: 18px;">
+        <article class="simple-card">
+          <h2>Subjects</h2>
 
-          <article class="card">
-            <h2>Math levels</h2>
-            <ul class="subject-list">
-              <li>Integrated Math 1, 2, and 3</li>
-              <li>Algebra 1 and Algebra 2</li>
-              <li>Geometry</li>
-              <li>Intro college math support</li>
-            </ul>
-          </article>
-        </div>
+          <ul class="clean-list">
+            <li>Math</li>
+            <li>Physics</li>
+            <li>AP Earth Science</li>
+            <li>Study skills and organization</li>
+            <li>Hebrew for bar and bat mitzvah preparation</li>
+          </ul>
+        </article>
+
+        <article class="simple-card">
+          <h2>Math levels</h2>
+
+          <ul class="clean-list">
+            <li>Integrated Math 1, 2, and 3</li>
+            <li>Algebra 1 and Algebra 2</li>
+            <li>Geometry</li>
+            <li>Middle school through college intro math</li>
+          </ul>
+        </article>
       </section>
     </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="container footer-bar">
       <span>Montview Tutor</span>
-      <a href="schedule.html">Book a free consult</a>
+      <a class="button" href="schedule.html">Book free consult</a>
     </div>
   </footer>
 </body>

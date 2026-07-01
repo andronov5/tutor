@@ -3,77 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Montview Tutor | Home</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <title>Montview Tutor</title>
+  <meta name="description" content="Clear, practical tutoring in Denver and online with Lis Cohen." />
+
+  <link rel="stylesheet" href="styles.css?v=10" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container navbar">
+    <div class="container header-bar">
       <a class="brand" href="index.html">Montview Tutor</a>
 
-      <nav class="nav-links" aria-label="Main navigation">
-        <a class="active" href="index.html">Home</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="active" href="index.html" aria-current="page">Home</a>
         <a href="tutoring.html">Tutoring</a>
-        <a class="book-link" href="schedule.html">Book</a>
+        <a class="nav-button" href="schedule.html">Book</a>
         <a href="faq.html">FAQs</a>
         <a href="about.html">About</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="home-hero">
-      <div class="container">
-        <div class="hero-card">
-          <h1>Tutoring that clicks.</h1>
+  <main class="home">
+    <div class="container">
+      <section class="hero">
+        <h1>Tutoring that clicks.</h1>
 
-          <p class="lead">
-            Calm, practical support for middle school, high school, and college students in Denver and online.
-          </p>
+        <p>
+          Calm, practical support for middle school, high school, and college students in Denver and online.
+        </p>
 
-          <div class="btn-row">
-            <a class="btn" href="schedule.html">Book free consult</a>
-            <a class="btn secondary" href="tutoring.html">See tutoring</a>
-          </div>
-
-          <div class="pill-row" aria-label="Tutoring topics">
-            <span class="pill">Math</span>
-            <span class="pill">Physics</span>
-            <span class="pill">Study skills</span>
-            <span class="pill">AP Earth Science</span>
-            <span class="pill">Hebrew</span>
-          </div>
+        <div class="button-row">
+          <a class="button" href="schedule.html">Book free consult</a>
+          <a class="button secondary" href="tutoring.html">See tutoring</a>
         </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="container grid three">
-        <article class="mini-card">
+        <div class="tags" aria-label="Tutoring subjects">
+          <span class="tag">Math</span>
+          <span class="tag">Physics</span>
+          <span class="tag">Study skills</span>
+          <span class="tag">AP Earth Science</span>
+          <span class="tag">Hebrew</span>
+        </div>
+      </section>
+
+      <section class="steps grid three" aria-label="How tutoring starts">
+        <article class="simple-card">
           <span class="step-number">1</span>
           <h3>Meet first</h3>
           <p>New families start with a free 30-minute virtual consult.</p>
         </article>
 
-        <article class="mini-card">
+        <article class="simple-card">
           <span class="step-number">2</span>
           <h3>Make a plan</h3>
-          <p>Lis helps identify what the student needs next.</p>
+          <p>Lis learns what support would help the student most.</p>
         </article>
 
-        <article class="mini-card">
+        <article class="simple-card">
           <span class="step-number">3</span>
           <h3>Book sessions</h3>
-          <p>Choose virtual or in-person tutoring after the consult.</p>
+          <p>After the consult, choose virtual or in-person tutoring.</p>
         </article>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="container footer-bar">
       <span>Montview Tutor</span>
-      <a href="schedule.html">Book a free consult</a>
+      <a class="button" href="schedule.html">Book free consult</a>
     </div>
   </footer>
 </body>
